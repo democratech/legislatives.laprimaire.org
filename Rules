@@ -1,0 +1,105 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The string given to #compile and #route are matching patterns for
+#   identifiers--not for paths. Therefore, you can’t match on extension.
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+preprocess do
+	create_robots_txt
+end
+
+unless defined? LOADED_DEFAULT_CONFIG
+  LOADED_DEFAULT_CONFIG = true
+  require 'compass'
+  Compass.add_project_configuration 'config.rb'
+end
+
+compile '/qualifie/*/' do
+	filter :erb
+	layout 'candidat'
+	filter :cache_buster, :strategy => :html
+end
+
+compile '/robots' do
+end
+
+compile '/assets/style/laprimaire' do
+	filter :sass, Compass.sass_engine_options
+end
+
+compile '/assets/scripts/application' do
+	filter :concat
+	filter :uglify_js
+end
+
+compile '/assets/style/application' do
+	filter :concat
+	filter :rainpress
+end
+
+compile '/assets/(style|scripts)/*' do
+	nil unless @config[:debug]
+end
+
+compile '/sitemap' do
+	filter :erb
+end
+
+compile '*' do
+  if item[:extension] == 'md'
+    filter :kramdown
+    layout 'markdown'
+    filter :cache_buster, :strategy => :html
+  elsif item[:extension] == 'html'
+    filter :erb
+    layout 'default'
+    filter :cache_buster, :strategy => :html
+  elsif item.binary?
+    # don’t filter binary items
+  else
+    filter :erb
+    layout 'default'
+  end
+end
+
+route '/docs/*' do
+	item.identifier.chop
+end
+
+route '/assets/**/_*' do
+  nil
+end
+
+route '/assets/style/font-awesome/*' do
+	# renaming. Ex: font-awesome_ttf.ttf -> font-awesome.ttf
+	item.identifier.sub(/_.+\/$/,'.') + item[:extension]
+end
+
+route 'sitemap' do
+	  item.identifier.chop + '.xml'
+end
+
+route '*' do
+  if item[:extension] == 'css' || item[:extension] == 'scss'
+     item.identifier.chop + fingerprint(@item[:filename])+'.css'
+  elsif item[:extension] == 'js'
+     item.identifier.chop + fingerprint(@item[:filename])+'.js'
+  elsif item.binary?
+    item.identifier.chop + '.' + item[:extension]
+  elsif item[:extension] == 'txt' || item[:extension] == 'xml'
+    item.identifier.chop + '.' + item[:extension]
+  else
+    item.identifier + 'index.html'
+  end
+end
+
+layout '*', :erb

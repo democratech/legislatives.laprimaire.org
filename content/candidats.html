@@ -1,0 +1,469 @@
+---
+title: Liste des candidats à LaPrimaire.org, la Primaire Citoyenne Ouverte pour l'élection Présidentielle de 2017
+url: https://laprimaire.org/candidats/
+social_title: Qui sont les candidats à LaPrimaire.org ?
+image: https://laprimaire.org/assets/images/social/candidats-laprimaire.png
+footer: true
+navbar: true
+candidats: true
+author: des citoyens ordinaires
+description: Retrouvez la liste des candidats à LaPrimaire.org, la première primaire citoyenne ouverte, organisée hors des partis politiques dont le but est de faire émerger des candidats crédibles et représentatifs en vue des prochaines élections présidentielles de 2017.
+---
+
+<style>
+<!--
+.lp-cat-active {
+	font-weight: bold;
+	color: #d91d1c !important;
+}
+.lp-cat-count {
+	color: #d91d1c;
+}
+.lp-cat-label {}
+.lp-cat-checkbox {}
+.lp-cat-item {
+	/*font-variant: small-caps;*/
+	margin: 2px 2px;
+	/*display: inline-block;*/
+	font-size: 14px;
+	color: #5e5e5e;
+}
+.gender-cat-item {
+	/*font-variant: small-caps;*/
+	margin: 2px 2px;
+	display: inline-block;
+	font-size: 14px;
+	color: #5e5e5e;
+}
+.lp-cat-header {
+	font-weight:bold;
+	color: #5e5e5e;
+	font-size: 16px;
+	font-variant: small-caps;
+}
+.lp-search-input {
+	width: 300px;
+	height: 50px;
+	padding-left: 10px;
+	border: 2px solid #d91d1c;
+}
+.lp-search {
+	width: auto;
+	padding: 5px 5px;
+	margin: 15px auto 15px auto;
+	text-align: center;
+	font-size: 20px;
+}
+.candidate_pic img, .candidate_oldpic img {
+	position: absolute;
+	top: 0px;
+	/* fill vertically */
+	width: auto;
+	height: 100%;
+	/* center horizontally */
+	left: -500px;
+	right: -500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.candidate_box a:hover { text-decoration:none; }
+.candidate_box {
+	min-height:300px;
+	margin-bottom:5px;
+}
+.candidate_pic:hover .nb_soutiens { display:none; }
+/* .candidate_pic:hover .nb_soutiens_total { display:inline; } */
+.candidate_oldpic.complete { display:none; }
+.candidate_oldpic {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 60%;
+	border: 8px solid #527bdd;
+	min-height: 300px;
+	padding:0px;
+}
+.candidate_pic.incomplete { display:none; }
+.candidate_pic {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	border: 8px solid #527bdd;
+	border-right: 2px solid #7e7e7e;
+	min-height: 300px;
+	padding:0px;
+}
+.candidate_bio em {
+	background-color:yellow;
+}
+.candidate_bio.incomplete { display:none; }
+.candidate_bio {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	border: 8px solid #d91d1c;
+	border-left: 2px solid #7e7e7e;
+	height: 300px;
+	padding:0px;
+}
+.badge_soutiens {
+	position:absolute;
+	color:white;
+	font-size:12px;
+	background-color:#d91d1c;
+	display:none;
+	padding:5px;
+	top:0px;
+	z-index: 1;
+}
+.badge_qualified {
+	position:absolute;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#56d840;
+	padding:5px;
+	top:0px;
+	right:0px;
+	z-index: 1;
+}
+.badge_qualified.non { display:none; }
+.nb_soutiens_total {
+	position:absolute;
+	color:white;
+	font-size:12px;
+	background-color:#d91d1c;
+	padding:5px;
+	bottom:0px;
+	z-index: 1;
+	/* test */
+	display:none;
+}
+.nb_soutiens {
+	position:absolute;
+	color:white;
+	font-size:12px;
+	background-color:#d91d1c;
+	padding:5px;
+	bottom:0px;
+	z-index: 1;
+	/* test */
+	display:none;
+}
+#powered_by {
+	display: inline-block;
+	background-color: white;
+	padding: 0px 5px 0px 5px;
+	float:right;
+	margin-top: -11px;
+}
+.priorite_title {
+	text-align:center;
+	color: #d91d1c;
+}
+.priorite {
+	text-align:justify;
+	margin-left: -20px;
+	font-size:11px;
+	color:#5e5e5e;
+	padding:2px;
+}
+.vision_title {
+	text-align:center;
+	color: #d91d1c;
+}
+.vision {
+	text-align:justify;
+	font-size:11px;
+	color:#5e5e5e;
+	padding:0px 5px;
+}
+.candidate_name em, .candidate_infos em { background-color: yellow; }
+.candidate_name {
+	font-size:14px;
+	color:#5e5e5e;
+	font-weight:bold;
+	text-align:center;
+}
+.candidate_infos {
+	min-height:55px;
+	font-size:12px;
+	color:#5e5e5e;
+	text-align:center;
+	margin-bottom:10px;
+}
+.age_job.incomplete { display:none; }
+.dept.incomplete { display:none; }
+.candidate_M_since.Femme { display:none; }
+.candidate_F_since.Homme { display:none; }
+.candidate_M_since, .candidate_F_since {
+	font-size:12px;
+	color:#5e5e5e;
+	font-weight:normal;
+	text-align:center;
+}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
+<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+
+    <header id="page-top">
+	<div id="header_overlay" class="blue">
+		<div class="container">
+		    <div class="row">
+			    <input type="text" id="search-box" />
+		    </div>
+	    </div>
+        </div>
+    </header>
+    <div id="powered_by"><a href="https://algolia.com" target="_blank"><img src="/assets/images/powered-by-algolia.png"></a></div>
+    <div class="row" style="border-bottom: 2px solid #527bdd;padding: 10px;width:100%;margin: 0px auto 0px auto;font-size: 16px;color: #5e5e5e;text-align:center;">
+	    Voici la liste des candidat(e)s <b>déclaré(e)s</b> à LaPrimaire.org ayant reçu au moins 1 soutien dans les 30 derniers jours. Cette liste et le nombre de soutiens sont rafraîchis 1 fois par jour.
+    </div>
+    <div class="alert alert-warning">
+	    <p style="font-size:16px;font-weight:bold;text-align: center;"><i class="fa fa-info-circle" style="font-size:1.5em;" aria-hidden="true"></i>La phase de qualification à LaPrimaire.org est terminée. La liste des candidat-e-s qualifié-e-s est <a href="/qualifies/" target="_blank">visible ici</a>.</p>
+    </div>
+    <section id="contribute_form" style="margin-top:0px;padding-top:0px;">
+	    <div class="container-fluid">
+		    <div class="row" style="width:95%;margin: 5px auto;">
+		    </div>
+		    <div class="row">
+			    <div class="col-lg-2 col-md-2">
+				    <div class="row">
+					    <div class="col-xs-12">
+						    <div id="gender"></div>
+						    <div id="candidate_supporters"></div>
+						    <div id="candidate_age"></div>
+						    <div id="departement"></div>
+						    <div id="secteur"></div>
+						    <div id="nb_days_verified"></div>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="col-lg-10 col-md-10">
+				    <div class="row">
+					    <div id="hits-container"></div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </section>
+<script type="text/javascript">
+function shuffle (o){
+	  for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	    return o;
+}
+var search = instantsearch({
+	appId: 'D1XVECSSVA',
+	apiKey: '58643f9dff29db9f8da06875479fb290',
+	indexName: 'candidates',
+	urlSync: false
+});
+search.addWidget(
+	instantsearch.widgets.searchBox({
+		container: '#search-box',
+		placeholder: 'Chercher un(e) candidat(e)...',
+		cssClasses: {root: 'lp-search',input:'lp-search-input'}
+	})
+);
+search.addWidget(
+	instantsearch.widgets.refinementList({
+	container: '#gender',
+	attributeName: 'gender',
+	sortBy: ['name:asc'],
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		checkbox:'lp-cat-checkbox',
+		label:'lp-cat-label',
+		active:'lp-cat-active',
+		count:'lp-cat-count'
+	},
+	templates: {
+		header: 'Sexe des candidats',
+	}
+
+})
+);
+search.addWidget(
+	instantsearch.widgets.menu({
+	container: '#secteur',
+	attributeName: 'secteur',
+	sortBy: ['count:desc'],
+	limit: 100,
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		checkbox:'lp-cat-checkbox',
+		label:'lp-cat-label',
+		active:'lp-cat-active',
+		count:'lp-cat-count'
+	},
+	templates: {
+		header: 'Secteur d\'activité professionel',
+	}
+
+})
+);
+/*
+search.addWidget(
+	instantsearch.widgets.toggle({
+	container: '#qualified',
+	attributeName: 'qualified',
+	label: 'Qualifiés',
+	values: { on: 'oui' },
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		checkbox:'lp-cat-checkbox',
+		label:'lp-cat-label',
+		active:'lp-cat-active',
+		count:'lp-cat-count'
+	}
+})
+);*/
+search.addWidget(
+	instantsearch.widgets.menu({
+	container: '#departement',
+	attributeName: 'departement',
+	sortBy: ['departement:asc'],
+	limit: 100,
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		checkbox:'lp-cat-checkbox',
+		label:'lp-cat-label',
+		active:'lp-cat-active',
+		count:'lp-cat-count'
+	},
+	templates: {
+		header: 'Département du candidat(e)',
+	}
+
+})
+);
+search.addWidget(
+	instantsearch.widgets.rangeSlider({
+	container: '#nb_days_verified',
+	attributeName: 'nb_days_verified',
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		active:'lp-cat-active'
+	},
+	templates: {
+		header: 'Nombre de jours en ligne',
+	}
+})
+);
+search.addWidget(
+	instantsearch.widgets.numericRefinementList({
+	container: '#candidate_supporters',
+	attributeName: 'nb_soutiens',
+	options: [
+		{name: 'Tous'},
+		{start: 500, name: '> 500'},
+		{start: 250, end: 499, name: '> 250'},
+		{start: 100, end: 249, name: '> 100'},
+		{end: 99, name: '< 100'}
+	],
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		active:'lp-cat-active'
+	},
+	templates: {
+		header: 'Nombre de soutiens',
+	}
+})
+);
+search.addWidget(
+	instantsearch.widgets.numericRefinementList({
+	container: '#candidate_age',
+	attributeName: 'age',
+	options: [
+		{name: 'Tous'},
+		{end: 24, name: '18 - 24 ans'},
+		{start: 25, end: 34, name: '25 - 34 ans'},
+		{start: 35, end: 44, name: '35 - 44 ans'},
+		{start: 45, end: 54, name: '45 - 54 ans'},
+		{start: 55, name: 'plus de 54 ans'}
+	],
+	cssClasses: {
+		header:'lp-cat-header',
+		item:'lp-cat-item',
+		active:'lp-cat-active'
+	},
+	templates: {
+		header: 'Age du candidat(e)',
+	}
+})
+);
+search.addWidget(
+	instantsearch.widgets.hits({
+		container: '#hits-container',
+		transformData: {
+			allItems: function (content) {
+				return { hits: shuffle(content.hits) };
+			}
+		},
+		templates: {
+			empty: '\
+			<div style="width:320px;margin:0px auto 20px auto;">\
+			Aucun candidat trouvé avec ce nom... peut-être souhaitez-vous plébisciter un citoyen pour l&#39;inviter à devenir candidat ?\
+			</div>\
+			<div style="width:320px;margin:20px auto;">\
+			En tant qu&#39;organisateurs de LaPrimaire.org, nous démarcherons activement tous les citoyens qui recueillent au moins 500 soutiens pour les inviter à être officiellement candidat sur LaPrimaire.org.\
+			</div>\
+			<div style="width:250px;margin:20px auto;">\
+			    <a style="font-size:18px;width:250px !important;font-variant:small-caps;font-weight:bold;" href="/citoyens/" class="btn btn-xl red" title="Plébisciter un citoyen">Les citoyens plébiscités</a>\
+			</div>\
+			<div style="width:320px;margin:20px auto;">\
+			Personne ne vous convient ? <a href="/inscription-candidat/" target="_blank">Soyez candidat</a> !\
+			</div>',
+			       allItems: '{{#hits}}\
+<div class="col-sm-6 col-md-6 col-lg-4">\
+<div class="candidate_box">\
+<div class="candidate_oldpic {{status}}" style="margin: 0 auto;">\
+		<div class="badge_soutiens">{{nb_soutiens}} soutiens</div>\
+		<div class="nb_soutiens_total">{{nb_soutiens}} soutiens au total</div>\
+		<div class="badge_qualified {{qualified}}">Qualifié</div>\
+		<div class="nb_soutiens">+{{nb_soutiens_7j}} soutiens / 7 derniers jours</div>\
+		<a href="https://laprimaire.org/candidat/{{candidate_id}}">\
+		<img src="https://s3.eu-central-1.amazonaws.com/laprimaire/{{photo}}" height="300px">\
+		</a>\
+	</div>\
+	<div class="candidate_pic {{status}} col-xs-6" style="margin: 0 auto;">\
+		<div class="badge_soutiens">{{nb_soutiens}} soutiens</div>\
+		<div class="nb_soutiens_total">{{nb_soutiens}} soutiens au total</div>\
+		<div class="badge_qualified {{qualified}}">Qualifié</div>\
+		<div class="nb_soutiens">+{{nb_soutiens_7j}} soutiens / 7 derniers jours</div>\
+		<a href="https://laprimaire.org/candidat/{{candidate_id}}">\
+		<img src="https://s3.eu-central-1.amazonaws.com/laprimaire/{{photo}}" height="300px">\
+		</a>\
+	</div>\
+	<div class="candidate_bio {{status}} col-xs-6" style="margin: 0 auto;">\
+		<div class="vision_title">Ma vision</div>\
+		<div class="vision"><q>{{{_highlightResult.vision.value}}}</q></div>\
+		<div class="priorite_title">Mes priorités</div>\
+		<ol>\
+		<li class="priorite">{{{_highlightResult.prio1.value}}}</li>\
+		<li class="priorite">{{{_highlightResult.prio2.value}}}</li>\
+		<li class="priorite">{{{_highlightResult.prio3.value}}}</li>\
+		</ol>\
+	</div>\
+</div>\
+<div class="candidate_name"><a href="https://laprimaire.org/candidat/{{candidate_id}}">{{{_highlightResult.name.value}}}</a></div>\
+<div class="candidate_infos">\
+	<div class="age_job {{status}}">{{age}} ans, {{{_highlightResult.job.value}}}</div>\
+	<div class="dept {{status}}">habite le département {{{_highlightResult.departement.value}}}</div>\
+	<div class="candidate_M_since {{gender}}">candidat depuis {{nb_days_verified}} jours</div>\
+	<div class="candidate_F_since {{gender}}">candidate depuis {{nb_days_verified}} jours</div>\
+</div>\
+</div>{{/hits}}'
+		},
+		hitsPerPage: 200
+	})
+);
+search.start();
+</script>

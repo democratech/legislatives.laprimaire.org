@@ -1,0 +1,376 @@
+---
+title: Aidez-nous à faire de La Primaire un succès !
+redirect_url: https://laprimaire.org/adherer/
+description: La participation à La Primaire est 100% gratuite et son organisation ne repose que sur vos dons. Aidez-nous à faire de La Primaire un succès !
+author: des citoyens ordinaires
+image: https://laprimaire.org/assets/images/comptes.png
+url: https://laprimaire.org/financer/
+social_title: Aidez-nous à faire de La Primaire un succès !
+footer: false
+navbar: true
+---
+
+<style>
+.thumbnail .caption { 
+  text-align: center 
+}
+.btn.btn-success {
+  background-color: #d91d1c;
+  color: white;
+}
+h4.card-title {
+	text-align:center;
+	font-weight: bold;
+	font-size: 24px;
+	color:#d91d1c;
+}
+div.card-body p {
+	font-size: 14px;
+}
+div.card-body {
+	height:70px;
+}
+div.lettre p {
+	font-size:14px;
+}
+h3 {
+	font-size: 20px;
+}
+#fundraising_objectif {
+	padding:0px;
+	color:white;
+	font-size:18px;
+	text-align:right;
+}
+.donateurs .goalProgress {
+	/*background: #527bdd;*/
+	background: white;
+}
+.donateurs div.progressBar {
+	/*background: #d91d1c;*/
+	background: #56d840;
+	overflow:visible;
+	height:62px;
+	color: white;
+	text-align:left;
+	font-size: 29px;
+	letter-spacing: -1px;
+	font-weight: 700;
+	padding: 11px;
+	display: block;
+	width: 20px;
+}
+span.goalAmount {
+	display: none;
+	text-indent: -9999px;
+}
+</style>
+
+    <header id="page-top">
+	<div id="header_overlay" class="blue">
+        <div class="container">
+            <div class="row">
+		    <div class="title">
+			    <h2>Contribuer à LaPrimaire.org</h2>
+		    </div>
+	    </div>
+        </div>
+        </div>
+    </header>
+
+    <section id="contribute_form">
+	    <div class="container">
+		    <div class="row" id="lettre_inline">
+			<div class="col-lg-7 col-md-12">
+
+				<div class="row">
+            <div class="lettre" style="color:#5e5e5e;">
+              <h3>Soutenez-nous un petit peu chaque mois</h3>
+            </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <div class="caption">
+							    <h4 class="card-title">5€</h4>
+							    <div class="card-body"><p>soit l'équivalent de 25 stickers à distribuer tous les mois.</p></div>
+							    <a style="font-size:18px;width:175px;font-variant:small-caps;font-weight:bold;" href="https://opencollective.com/laprimaire/donate/5/monthly" class="btn btn-xl red" target="_blank" title="Je contribue 5€ par mois">5€ par mois</a>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <div class="caption">
+							    <h4 class="card-title">10€</h4>
+							    <div class="card-body"><p>soit l'équivalent d'1 carnet de 12 timbres tous les mois.</p></div>
+							    <a style="font-size:18px;width:175px;font-variant:small-caps;font-weight:bold;" href="https://opencollective.com/laprimaire/donate/10/monthly" class="btn btn-xl red" target="_blank" title="Je contribue 10€ par mois">10€ par mois</a>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <div class="caption">
+							    <h4 class="card-title">20€</h4>
+							    <div class="card-body"><p>soit l'équivalent d'une quinzaine de titres de transport tous les mois.</p></div>
+							    <a style="font-size:18px;width:175px;font-variant:small-caps;font-weight:bold;" href="https://opencollective.com/laprimaire/donate/20/monthly" class="btn btn-xl red" target="_blank" title="Je contribue 20€ par mois">20€ par mois</a>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="clearfix visible-sm-block"></div>
+            
+            <div class="lettre" style="color:#5e5e5e;">
+              <h3>Ou faites un don ponctuel</h3>
+            </div>
+            
+            
+ 				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">5€</h4>
+							    <div class="card-body"><p>Nous permet d'imprimer 25 stickers à distribuer</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 5€"
+	data-currency="eur"
+	data-amount="500"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 5€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="500" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">10€</h4>
+							    <div class="card-body"><p>Nous permet d'acheter 1 carnet de 12 timbres</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 10€"
+	data-currency="eur"
+	data-amount="1000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 10€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="1000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">20€</h4>
+							    <div class="card-body"><p>Permet d'acheter une quinzaine de titres de transport</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 20€"
+	data-currency="eur"
+	data-amount="2000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 20€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="2000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="clearfix visible-sm-block"></div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">30€</h4>
+							    <div class="card-body"><p>Finance 1 mois d'abonnement à un service web</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 30€"
+	data-currency="eur"
+	data-amount="3000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 30€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="3000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">50€</h4>
+							    <div class="card-body"><p>Nous permet d'imprimer 200 tracts à distribuer</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 50€"
+	data-currency="eur"
+	data-amount="5000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 50€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="5000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">100€</h4>
+							    <div class="card-body"><p>Finance 1 billet de TGV aller/retour pour 1 personne</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 100€"
+	data-currency="eur"
+	data-amount="10000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 100€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="10000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="clearfix visible-sm-block"></div>
+					<div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">250€</h4>
+							    <div class="card-body"><p>Finance 1 déplacement de 2 jours pour 1 personne</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 250€"
+	data-currency="eur"
+	data-amount="25000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 250€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="25000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				    <div class="col-sm-4">
+					    <div class="thumbnail">
+						    <form action="https://api.democratech.co/v1/stripe/donate" method="POST">
+						    <div class="caption">
+							    <h4 class="card-title">500€</h4>
+							    <div class="card-body"><p>Finance 1 meeting de 100 personnes</p></div>
+							    <script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="pk_live_jXHi74bMvujqlLzXjcpe7Jmi"
+	data-image="https://s3.amazonaws.com/stripe-uploads/acct_16tAsiGAcz2jOniXmerchant-icon-1446693599726-circle1.png"
+	data-name="Don à LaPrimaire.org"
+	data-description="Je contribue 500€"
+	data-currency="eur"
+	data-amount="50000"
+	data-locale="FR"
+	data-zip-code="false"
+	data-panel-label="Je contribue {{amount}}"
+	data-billing-address="true"
+	data-allow-remember-me="true"
+	data-label="Je contribue 500€">
+							    </script>
+						    </div>
+						    <input type="hidden" value="50000" name="don">
+						    </form>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-sm-12">
+				<div class="lettre" style="color:#5e5e5e;">
+					<h3>Pourquoi avez-vous besoin de dons ?</h3>
+					<p>LaPrimaire.org est <b>entièrement gratuite</b> pour les citoyens donc <b>son financement repose uniquement sur vos dons</b>.</p>
+					<h3>A quoi va servir mon argent ?</h3>
+					<p>Vos dons seront utilisés <b>exclusivement pour l'organisation de la primaire</b>, notamment pour couvrir les frais de logistique et de communication. Vous trouverez ci-contre des exemples de ce que votre don peut aider à financer.</p>
+					<h3>Ai-je droit à une réduction d'impôt ?</h3>
+					<p>Votre don vous donne droit à une réduction annuelle d’impôt sur le revenu à hauteur de 66% de son montant dans la double limite de 20% du revenu imposable et de 15000€ de dons par foyer fiscal.<br/>Dans le cadre de la loi relative à la transparence de la vie publique, la somme annuelle des cotisations et dons versés par une personne physique à une ou plusieurs associations agréées en qualité d’association de financement, ou à un ou plusieurs mandataires financiers d’un ou de plusieurs partis politiques, est plafonnée à 7500 € (15000 € par foyer fiscal).  Cela signifie que l’ensemble des dons et cotisations que vous versez sur l’année aux différents candidats et/ou partis politiques que vous souhaitez soutenir, ne peut excéder 7500 € (15000 € par foyer fiscal). Selon l’article 11-15 de la loi du 11 mars 1988, les dépassements sont sanctionnés par des peines d’amende et d’emprisonnement.</p>
+					<p><b>IMPORTANT</b> : Pour les dons effectués en 2016, un reçu à joindre à votre déclaration de revenus sera adressé en avril 2017.</p>
+					<p>Attention : Si vous réalisez un don à LaPrimaire.org, vous certifiez sur l'honneur que :
+					<ul>
+						<li>Vous êtes une personne physique et le règlement de votre don ne provient pas du compte d'une personne morale (société, association, collectivité...),</li>
+						<li>Le paiement de votre don provient de votre compte bancaire personnel ou de celui de votre conjoint, concubin, ascendant ou descendant.</li>
+					</ul>
+					<h3>Puis-je faire un don par chèque ou via paypal ?</h3>
+					<p>Oui, vous pouvez nous faire parvenir un chèque à l'ordre de "LaPrimaire.org" à l'adresse suivante : <i>LaPrimaire.org, 21, Place de la République, 75003 Paris</i>. Les dons via paypal ne sont pas autorisés.</p>
+				</div>
+			</div>
+		    </div>
+	    </div><!--/container-->
+    </section>
+
+
+    <!--<footer class="hidden-xs" style="padding: 0px;">
+        <div class="container">
+            <div class="row" style="margin-bottom:0px;">
+		<div class="col-xs-12" style="text-align:right;padding-top:10px;">
+		    <span style="font-size:20px;color:white;font-weight:bold;font-variant:small-caps;">La Primaire est 100% gratuite et ne repose que sur vos dons</span>
+		</div>
+ 	    </div>
+            <div class="row pledge">
+		<div class="col-sm-3 hidden-xs">
+			<div style="padding:6px 0px 6px 0px;color:white;font-weight:bold;font-size:18px;text-align:right;font-variant:small-caps;" id="fundraising_figures"></div>
+		</div>
+		<div class="col-sm-9 hidden-xs">
+			<div style="float:right;margin-bottom:10px;padding:10px;color:#527bdd;font-weight:normal;font-size:20px;" id="fundraising_timeleft">objectif : <span style="color:red;font-size:150%;">100.000</span> euros</div>
+			<div id="financement_bar" class="donateurs"></div>
+		</div>
+            </div>
+        </div>
+    </footer>-->

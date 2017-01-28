@@ -1,0 +1,95 @@
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Changer la navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+		<a class="navbar-brand" href="/"><img src="/assets/images/logos/laprimaire-185x60.jpg" width="185" height="60" srcset="/assets/images/logos/laprimaire-185x60.jpg 1x, /assets/images/logos/laprimaire-370x120.png 2x" alt="logo LaPrimaire.org"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+      <% if @item[:navbar] %>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+		    <!--
+		    <li class="dropdown<% if @item[:candidats] %> active<% end %>">
+			<a tabindex="0" data-toggle="dropdown">
+				Candidats<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a tabindex="0" href="/qualifies/">Les candidats qualifiés</a></li>
+				<li><a tabindex="0" href="/candidats/">Les candidats déclarés</a></li>
+				<li><a tabindex="0" href="/citoyens/">Les citoyens plébiscités</a></li>
+				<li class="divider"></li>
+				<li><a tabindex="0" href="/inscription-candidat/">Être candidat(e)</a></li>
+				<li><a tabindex="0" href="/charte/">Notre charte</a></li>
+			</ul>
+		    </li>-->
+		    <li class="dropdown">
+			<a tabindex="0" data-toggle="dropdown">
+				La Primaire<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<!--<li><a tabindex="0" href="/aider/">S'impliquer</a></li>-->
+				<!--<li class="divider"></li>-->
+				<!--<li><a tabindex="0" href="/carte/">Où sommes-nous ?</a></li>-->
+				<!--<li><a tabindex="0" href="/partager/">Partager</a></li>-->
+				<!--<li><a tabindex="0" href="/faq/">FAQ</a></li>-->
+<!--				<li><a tabindex="0" href="/qualifies/">Les candidats qualifiés</a></li>-->
+<!--				<li><a tabindex="0" href="/candidats/">Les candidats déclarés</a></li>-->
+<!--				<li><a tabindex="0" href="/citoyens/">Les citoyens plébiscités</a></li>-->
+<!--				<li class="divider"></li>-->
+<!--				<li><a tabindex="0" href="/inscription-candidat/">Être candidat(e)</a></li>-->
+<!--				<li><a tabindex="0" href="/charte/">Charte du candidat</a></li>-->
+<!--				<li class="divider"></li>-->
+				<li><a tabindex="0" href="https://articles.laprimaire.org" target="_blank">Actualités</a></li>
+				<li><a tabindex="0" target="_blank" href="https://laprimaire.org/manifeste/">Manifeste</a></li>
+				<li><a tabindex="0" href="/reglement/">Règlement et Calendrier</a></li>
+                <li><a tabindex="0" href="/charte/">Charte du candidat</a></li>
+                <li class="divider"></li>
+				<li><a tabindex="0" target="_blank" href="https://laprimaire.org/equipe/">L'équipe</a></li>
+				<li><a tabindex="0" target="_blank" href="https://laprimaire.org/contact/">Nous contacter</a></li>
+				<li><a tabindex="0" target="_blank" href="https://laprimaire.org/presse/">Accès presse</a></li>
+				<li class="divider"></li>
+				<li><a tabindex="0" target="_blank" href="https://laprimaire.org/legal/">Mentions légales</a></li>
+				<li><a tabindex="0" href="https://s3.eu-central-1.amazonaws.com/laprimaire/documents/LaPrimaire.org+-+Statuts+-+2016.12.01.pdf" target="_blank">Statuts</a></li>
+				<li><a tabindex="0" href="https://s3.eu-central-1.amazonaws.com/laprimaire/documents/LaPrimaire.org+-+RI+-+2016.12.01.pdf" target="_blank">Règlement Intérieur</a></li>
+				<!--<li><a tabindex="0" href="/calendrier/">Evènements</a></li>-->
+			</ul>
+		    </li>
+		    <!--<li class="dropdown">
+			<a tabindex="0" data-toggle="dropdown">
+				L'association<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a tabindex="0" href="/transparence/">Transparence</a></li>
+				<li><a tabindex="0" href="/equipe/">L'équipe</a></li>
+				<li><a tabindex="0" href="/contact/">Nous contacter</a></li>
+				<li class="divider"></li>
+				<li><a tabindex="0" href="/statuts/">Statuts</a></li>
+				<li><a tabindex="0" href="/reglement/">Règlement Intérieur</a></li>
+				<li><a tabindex="0" href="/legal/">Mentions légales</a></li>
+			</ul>
+		    </li>-->
+		    <li <% if not item[:home] %>class="active"<% end %>>
+			    <a tabindex="0" data-target="#EnrollNow" class="joinus_action" data-toggle="modal" style="cursor:pointer;<% if not item[:home] %>background-color:#d91d1c;<% end %>">Etre candidat</a>
+                    </li>
+		    <li <% if not item[:home] %>class="active"<% end %>>
+			    <a tabindex="0" href="https://laprimaire.org/adherer/" target="_blank" class="donate-link" style="cursor:pointer;<% if not item[:home] %>background-color:#527bdd;<% end %>">Faire un don</a>
+                    </li>
+                </ul>
+            </div>
+      <% end %>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
