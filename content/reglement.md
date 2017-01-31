@@ -64,11 +64,11 @@ Le parti politique LaPrimaire.org ne financera pas directement et sur ses fonds 
 
 Les organisateurs de LaPrimaire.org se réserve le droit d'ajuster le calendrier, le cas échéant, dans l’intérêt général du bon déroulement des Primaires Citoyennes.
 
-#### __27 janvier 2017__ : Ouverture des inscriptions
+#### __1er février 2017__ : Ouverture des inscriptions
 
 Les inscriptions aux Primaires Citoyennes dédiées aux élections législatives ouvrent le 27 janvier 2017. Aucune restriction n’est fixée pour participer si ce n’est le respect des conditions énoncées ci-avant et de la signature de la Charte du (de la) candidat
 
-#### __3 février 2017 - 12 mars 2017__ : Seuils de qualification et d’ouverture effective
+#### __10 février 2017 - 17 mars 2017__ : Seuils de qualification et d’ouverture effective
 
 L’organisation d’une primaire citoyenne dans une circonscription est subordonnée à l’atteinte de différents seuils (explicités ci-dessous), lesquels s’analysent par circonscription. Ces seuils devront être atteints et seront appréciés le dernier jour - 20h00 (heure de Paris) - de la période de qualification.
 
