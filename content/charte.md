@@ -1,6 +1,6 @@
 ---
-title: La charte des candidats à la députation sur LaPrimaire.org
-page_title: Charte des candidats à la députation sur LaPrimaire.org
+title: La charte des candidat(e)s à la députation sur LaPrimaire.org
+page_title: Charte des candidat(e)s à la députation sur LaPrimaire.org
 description: Cette page décrit et explicite la charte que tous les citoyen(ne)s candidat(e)s à LaPrimaire.org devront accepter pour pouvoir être officiellement candidat(e)s à LaPrimaire.org dans le cadre des prochaines élections législatives.
 author: des citoyens ordinaires
 image: https://laprimaire.org/assets/images/social/charte.jpg
