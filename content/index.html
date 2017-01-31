@@ -393,7 +393,7 @@ ul.social_buttons > li{
                     <div id="mc_embed_signup">
                     <form action="//democratech.us10.list-manage.com/subscribe/post?u=8c2d56a7d4aaae67a22a6e953&amp;id=c673465aad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
-                        <label for="mce-EMAIL" style="font-weight:normal;">Citoyens, inscrivez-vous pour être tenu au courant de l'ouverture officielle&nbsp; :</label>
+                        <label for="mce-EMAIL" style="font-weight:normal;">Citoyens, inscrivez-vous pour être tenu au courant de l'ouverture officielle*&nbsp; :</label>
                         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="adresse email" required>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8c2d56a7d4aaae67a22a6e953_c673465aad" tabindex="-1" value=""></div>
@@ -406,6 +406,7 @@ ul.social_buttons > li{
                 <div class="row" style="padding: 20px 0px;">
                     <a href="/reglement/">Règlement et calendrier</a> - <a href="/charte/">Charte du candidat</a>
                 </div>
+                <p style="font-size:10px;text-align:justify;color:#777;font-style:italic;">* Les informations recueillies sont nécessaires à la gestion de nos relations. Elles font l’objet d’un traitement informatique et sont réservées à l’usage de LaPrimaire.org - Association Loi 1901 (RNA n° W751235289). En remplissant ce formulaire, vous nous autorisez à utiliser vos données pour des opérations d'information, de communication et de dons. Vos informations ne pourront être communiquées qu’à des co-contractants de LaPrimaire.org, qui, en leur qualité de sous-traitants, n'agiront que sur les instructions de cette dernière et seront soumis à une stricte obligation de confidentialité. Vos données ne seront jamais commercialisées. En application des dispositions des articles 38 et suivants de la loi du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès, de rectification, de suppression et d’opposition aux informations vous concernant. Vous pouvez exercer ces droits en nous adressant un e-mail à l’adresse confidentialite@laprimaire.org.</p>
             </div>
         <div style="height:40px;">&nbsp;</div>
         </div>
@@ -678,7 +679,7 @@ expire: function(idxs){
 	},
 format: function(r){
 		var out="";
-		//out += r.w +" "+((r.w==1)?"semaine":"semaines")+", ";
+		out += r.w +" "+((r.w==1)?"semaine":"semaines")+", ";
 		if(r.d != 0){out += r.d +" "+((r.d==1)?"jour":"jours")+", ";}
 		if(r.h != 0){out += r.h +" "+((r.h==1)?"heure":"heures")+", ";}
 		out += r.m +" "+((r.m==1)?"minute":"minutes")+", ";
@@ -723,6 +724,6 @@ display: function(cnt,msg){ document.getElementById(cnt.id).innerHTML=msg; }
 
 window.onload=function(){
 	var cdown = new CDown();
-	cdown.add(new Date(Date.UTC(2017,1,3,19)), "countdownbox");
+	cdown.add(new Date(Date.UTC(2017,1,10,19)), "countdownbox");
 };
     </script>
