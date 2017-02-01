@@ -66,7 +66,7 @@ Le calendrier pourra être ajusté, le cas échéant, dans l’intérêt génér
 
 #### __1er février 2017__ : Ouverture des inscriptions
 
-Les inscriptions aux Primaires Ouvertes dédiées aux élections législatives ouvrent le 1er février 2017. Aucune restriction n’est fixée pour participer si ce n’est le respect des conditions énoncées ci-avant et de la signature de la Charte du (de la) candidat
+Les inscriptions aux Primaires Ouvertes dédiées aux élections législatives ouvrent le 1er février 2017. Aucune restriction n’est fixée pour participer si ce n’est le respect des conditions énoncées ci-avant et de la signature de la Charte du (de la) candidat(e).
 
 #### __10 février 2017 - 26 mars 2017__ : Seuils de qualification et d’ouverture effective
 
