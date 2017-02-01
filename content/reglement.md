@@ -66,9 +66,9 @@ Le calendrier pourra être ajusté, le cas échéant, dans l’intérêt génér
 
 #### __1er février 2017__ : Ouverture des inscriptions
 
-Les inscriptions aux Primaires Ouvertes dédiées aux élections législatives ouvrent le 27 janvier 2017. Aucune restriction n’est fixée pour participer si ce n’est le respect des conditions énoncées ci-avant et de la signature de la Charte du (de la) candidat
+Les inscriptions aux Primaires Ouvertes dédiées aux élections législatives ouvrent le 1er février 2017. Aucune restriction n’est fixée pour participer si ce n’est le respect des conditions énoncées ci-avant et de la signature de la Charte du (de la) candidat
 
-#### __1er février 2017 - 26 mars 2017__ : Seuils de qualification et d’ouverture effective
+#### __10 février 2017 - 26 mars 2017__ : Seuils de qualification et d’ouverture effective
 
 L’organisation d’une primaire ouverte dans une circonscription est subordonnée à l’atteinte de différents seuils (explicités ci-dessous), lesquels s’analysent par circonscription. Ces seuils devront être atteints et seront appréciés le dernier jour - 20h00 (heure de Paris) - de la période de qualification.
 
@@ -77,7 +77,7 @@ L’organisation d’une primaire ouverte dans une circonscription est subordonn
  * au moins mille (1.000) citoyen(ne)s résidant dans la circonscription concernée doivent être inscrit(e)s sur le site web LaPrimaire.org dans la section dédiée ;
  * au moins deux (2) candidat(e)s de la circonscription ont atteint le seuil de qualification.
 
-#### __7 - 16 avril 2017__ : Vote
+#### __7 avril 2017 - 16 avril 2017__ : Vote
 
 Les citoyen(ne)s de chaque circonscription seront appelé(e)s à évaluer les candidat(e)s qualifié(e)s et encore en lice (après la phase de sélection ou non) selon le mode de scrutin du jugement majoritaire, déjà utilisé lors de la primaire ouverte à l’élection présidentielle. Pour rappel, par ce mode de scrutin, il est demandé à chaque électeur de se prononcer sur chacun(e) des candidat(e)s et de lui attribuer une mention allant de “Très bien” à “Insuffisant”. Plus de détails [en image ici](https://laprimaire.org/citoyen/vote/tutorial_final). 
 
