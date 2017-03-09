@@ -365,9 +365,8 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 20px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 700;
-    line-height: 50px;
 }
 @media(min-width:1280px) {
     header .intro-text {
@@ -384,7 +383,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 20px;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 55px;
+        font-size: 45px;
         font-weight: 700;
         line-height: 55px;
     }
@@ -520,4 +519,15 @@ body {
     -ms-transform: rotate(-15deg);
     -o-transform: rotate(-15deg);
     transform: rotate(-15deg);
+}
+
+#invisible-depts ul li a:link {
+    color:#777;
+}
+#invisible-depts ul li {
+    font-size:12px;
+}
+#invisible-depts {
+    text-align: left;
+    margin-top:20px;
 }

@@ -80,7 +80,7 @@
 			</ul>
 		    </li>-->
 		    <li <% if not item[:home] %>class="active"<% end %>>
-			    <a tabindex="0" href="/inscription-candidat/" style="cursor:pointer;<% if not item[:home] %>background-color:#d91d1c;<% end %>">Etre candidat</a>
+			    <a tabindex="0" data-toggle="modal" data-target="#JoinUsNow" style="cursor:pointer;<% if not item[:home] %>background-color:#d91d1c;<% end %>">Participer</a>
                     </li>
 		    <li <% if not item[:home] %>class="active"<% end %>>
 			    <a tabindex="0" href="https://laprimaire.org/adherer/" target="_blank" class="donate-link" style="cursor:pointer;<% if not item[:home] %>background-color:#527bdd;<% end %>">Faire un don</a>
