@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <% unless @item[:no_navbar] %>
-    <%= render "navbar" %>
-    <% end %>
       <%= render "head" %>
 </head>
 <body class="index">
+    <% unless @item[:no_navbar] %>
+    <%= render "navbar" %>
+    <% end %>
+
 	<!-- Facebook Pixel Code -->
 	<script>
 	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
